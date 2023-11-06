@@ -45,7 +45,7 @@ export default function Header() {
         <li className="mr-5 text-xs">
           <a
             className="block hover:text-slate-200"
-            href="https://github.com/bchiang7"
+            href="https://github.com/alananayadev"
             target="_blank"
             rel="noreferrer"
           >
@@ -64,7 +64,7 @@ export default function Header() {
         <li className="mr-5 text-xs">
           <a
             className="block hover:text-slate-200"
-            href="https://instagram.com/bchiang7"
+            href="https://www.instagram.com/alananayaa"
             target="_blank"
             rel="noreferrer"
           >
@@ -83,9 +83,9 @@ export default function Header() {
         <li className="mr-5 text-xs">
           <a
             className="block hover:text-slate-200"
-            href="https://twitter.com/bchiang7"
+            href="https://x.com/alananayadev"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             <span className="sr-only">Twitter</span>
             <svg
@@ -103,7 +103,7 @@ export default function Header() {
         <li className="mr-5 text-xs">
           <a
             className="block hover:text-slate-200"
-            href="https://www.linkedin.com/in/bchiang7/"
+            href="https://www.linkedin.com/in/alananayadev/"
             target="_blank"
             rel="noreferrer noopener"
           >
