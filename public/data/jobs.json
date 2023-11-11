@@ -1,0 +1,104 @@
+[
+    {
+        "title": "iOS Developer",
+        "position": "Ssr. iOS Developer",
+        "companyName": "Globant",
+        "companyURL": "https://globant.com",
+        "positionDetails": "Delivered exceptional code for Citibanamex, Baz, Express and the Toronto mental health app. Led the development of innovative solutions using Swift UI, MVVM, and MVP architectures. Integrated ChatGPT API for personalized tasks, ensuring top-notch performance and user experience. Demonstrated leadership by driving successful sprint cycles, collaborating effectively, and providing clear documentation.",
+        "startYear": 2021,
+        "lessThanYear": false,
+        "isActive": true,
+        "skills": [
+            "SwiftUI",
+            "Swift",
+            "Combine",
+            "GraphQL",
+            "JIRA",
+            "Design Patterns",
+            "Design Architectures"
+        ]
+    },
+    {
+        "title": "Freelancer",
+        "position": "Web/Mobile Developer",
+        "companyName": "Alan Anaya",
+        "companyURL": "https://connect.alananaya.dev",
+        "positionDetails": "Developed top-tier web and mobile apps using HTML5, CSS3, iOS, Android, Java, Swift, JavaScript, and PHP. Created responsive web apps with the latest front-end tech, ensuring optimal user experience. Delivered native iOS and Android apps on time and within budget, exceeding client expectations. Provided ongoing support and maintenance for optimal functionality post-deployment.",
+        "startYear": 2014,
+        "lessThanYear": false,
+        "isActive": true,
+        "skills": [
+            "PHP",
+            "MERN Stack",
+            "HTML5",
+            "CSS3",
+            "iOS",
+            "Android",
+            "Kotlin",
+            "Swift",
+            "MongoDB"
+        ]
+      },
+    {
+        "title": "Developer Consultant",
+        "position": "FullStack Developer",
+        "companyName": "oOMovil",
+        "companyURL": "https://oomovil.com",
+        "positionDetails": "Developed MERN stack applications from inception to delivery. Proficient in ExpressJS, PHP, MySQL, MongoDB. Expertise in Objective-C for legacy support. Swift and Objective-C with UI Kit for iOS. Contributed to React Native, iOS, Android apps. Committed to high-quality solutions, continuous skill improvement, and staying updated on the latest technologies.",
+        "startYear": 2020,
+        "endYear": 2021,
+        "lessThanYear": false,
+        "isActive": false,
+        "skills": [
+            "MERN",
+            "Swift",
+            "Objective-C",
+            "UIKit",
+            "React Native",
+            "MySQL",
+            "MongoDB",
+            "PHP"
+        ]
+    },
+    {
+        "title": "IT Specialist",
+        "position": "System Administrator",
+        "companyName": "IBM",
+        "companyURL": "https://www.ibm.com/",
+        "positionDetails": "Managed AIX, Linux, and Windows systems, handling installation and level 2 support. Developed TTT (Team Tracking Tool), enhancing ticket tracking. Designed OS templates for IBM private cloud VPS provisioning, including AIX and Linux with specific configurations and middleware like WebSphere and DB2.",
+        "startYear": 2016,
+        "endYear": 2019,
+        "lessThanYear": false,
+        "isActive": false,
+        "skills": [
+            "AIX",
+            "Linux",
+            "Windows",
+            "Server Troubleshooting",
+            "VMWare Sphere",
+            "AWS",
+            "Ansible",
+            "Shell Scripting"
+        ]
+      },
+      {
+        "title": "Intern Developer",
+        "position": "SAP ABAP Developer",
+        "companyName": "Hewlett Packard Enterprise",
+        "companyURL": "https://www.hpe.com",
+        "positionDetails": "Received basic training in SAP R/3 ABAP reports development. Trained in business analysis, gathering report requirements. Acquired foundational skills in Qlikview.",
+        "startYear": 2016,
+        "endYear": 2016,
+        "lessThanYear": true,
+        "isActive": false,
+        "startMonth": "feb",
+        "endMonth": "oct",
+        "skills": [
+            "Business Analysis",
+            "ABAP",
+            "Mentoring",
+            "Scrum",
+            "Qlikview"
+        ]
+      }
+]

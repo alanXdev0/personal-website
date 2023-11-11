@@ -4,13 +4,13 @@ export default interface WorkDetailsInterface {
     title: string;
     position: string;
     companyName: string;
-    companyUrl: string;
+    companyURL: string;
     positionDetails: string;
     startYear: number;
     endYear?: number;
     lessThanYear: boolean;
     isActive: boolean;
-    startMonth?: month;
-    endMonth?: month;
-    skills: [string];
+    startMonth?: string;
+    endMonth?: string;
+    skills: string[];
   }

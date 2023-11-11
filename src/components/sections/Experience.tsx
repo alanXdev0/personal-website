@@ -1,6 +1,34 @@
+"use client";
+import WorkDetailsInterface from "@/interfaces/WorkDetailsInterface";
 import { WorkDetailsCard } from "../WorkDetailsCard";
+import { useEffect, useState } from "react";
 
 export default function Experience() {
+  const [experienceInformation, setExperienceInformation] = useState<
+    WorkDetailsInterface[]
+  >([]);
+  const [dataFetched, setDataFetched] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!dataFetched) {
+      fetchData();
+    }
+  }, [dataFetched]);
+
+  async function fetchData() {
+    const response = await fetch("/data/jobs.json");
+    const data: WorkDetailsInterface[] = await response.json();
+    setDataFetched(true);
+    console.log(data);
+    setExperienceInformation(data);
+  }
+
+  function renderCards() {
+    return experienceInformation.map((experience, index) => {
+      return <WorkDetailsCard key={index} workDetails={experience} />;
+    });
+  }
+
   return (
     <section
       id="experience"
@@ -13,9 +41,7 @@ export default function Experience() {
         </h2>
       </div>
       <div>
-        <ol className="group/list">
-          <WorkDetailsCard />
-        </ol>
+        <ol className="group/list">{renderCards()}</ol>
         <div className="mt-12">
           <a
             className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"

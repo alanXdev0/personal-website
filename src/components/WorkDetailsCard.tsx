@@ -2,33 +2,49 @@ import WorkDetailsInterface from "@/interfaces/WorkDetailsInterface";
 import TechSkill from "./TechSkill";
 
 export const WorkDetailsCard: React.FC<{
-  workDetails?: WorkDetailsInterface;
+  workDetails: WorkDetailsInterface;
 }> = ({ workDetails }) => {
+  function getDateString(): string {
+    let dateString: string = "";
+    if (workDetails.lessThanYear) {
+      dateString = `${workDetails.startMonth ?? ""} - ${
+        workDetails.endMonth ?? ""
+      } ${workDetails.startYear}`;
+    } else {
+      dateString = `${workDetails.startYear} - ${
+        workDetails.isActive ? "present" : workDetails.endYear ?? 0
+      }`;
+    }
+    return dateString;
+  }
+
   return (
     <li className="mb-12">
       <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
         <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-sky-700/10 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
         <header
           className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-          aria-label="2018 to Present"
+          aria-label={`${workDetails.startYear} to ${
+            workDetails.isActive ? "present" : workDetails.endYear
+          }`}
         >
-          2018 — Present
+          {getDateString()}
         </header>
         <div className="z-10 sm:col-span-6">
           <h3 className="font-medium leading-snug text-slate-200">
             <div>
               <a
                 className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-sky-300 focus-visible:text-sky-300  group/link text-base"
-                href="https://upstatement.com"
+                href={workDetails.companyURL}
                 target="_blank"
-                rel="noreferrer"
-                aria-label="Lead Engineer at Upstatement"
+                rel="noreferrer noopener"
+                aria-label={`${workDetails.title} at ${workDetails.companyName}`}
               >
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                 <span>
-                  Lead Engineer ·{" "}
+                  {workDetails.title} ·{" "}
                   <span className="inline-block">
-                    Upstatement
+                    {workDetails.companyName}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
@@ -48,22 +64,12 @@ export const WorkDetailsCard: React.FC<{
             </div>
             <div>
               <div className="text-slate-500" aria-hidden="true">
-                Senior Engineer
-              </div>
-            </div>
-            <div>
-              <div className="text-slate-500" aria-hidden="true">
-                Engineer
+                {workDetails.position}
               </div>
             </div>
           </h3>
           <p className="mt-2 text-sm leading-normal">
-            Deliver high-quality, robust production code for a diverse array of
-            projects for clients including Harvard Business School, Everytown
-            for Gun Safety, Pratt Institute, Koala Health, Vanderbilt
-            University, The 19th News, and more. Provide leadership within
-            engineering department through close collaboration, knowledge
-            shares, and mentorship.
+            {workDetails.positionDetails}
           </p>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
             {workDetails?.skills.map((skill, index) => (
