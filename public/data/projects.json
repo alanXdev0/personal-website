@@ -1,0 +1,14 @@
+[
+    {
+        "title": "MEX1C0 - 10 Digítos",
+        "description": "Developed an iOS and Android app streamlining contact numbers. Ensures compliance with Mexico's dialing rules, adding city codes seamlessly. Eliminated 044/045 and extra digits, simplifying dialing. From abroad, simply add +52. Offering an efficient solution for seamless communication.",
+        "url": "https://mex1c0.alananaya.dev",
+        "image": "/img/mex1c0.webp"
+    },
+    {
+        "title": "Alan Anaya v1",
+        "description": "1st version of my personal portfolio, made entirely using HTML5 and CSS3",
+        "url": "https://v1.alananaya.dev",
+        "image": "/img/v1.webp"
+    }
+]

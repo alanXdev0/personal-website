@@ -49,11 +49,11 @@ export default function Experience() {
             href="/resume.pdf"
           >
             <span>
-              <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+              <span className="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">
                 View Full{" "}
               </span>
               <span className="whitespace-nowrap">
-                <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                <span className="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">
                   Résumé
                 </span>
                 <svg

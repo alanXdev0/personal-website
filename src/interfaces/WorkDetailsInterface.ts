@@ -1,5 +1,3 @@
-import { month } from "@/types/month";
-
 export default interface WorkDetailsInterface {
     title: string;
     position: string;
