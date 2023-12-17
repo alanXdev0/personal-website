@@ -86,7 +86,7 @@ export default function Header() {
         <li className="mr-5 text-xs">
           <a
             className="block hover:text-slate-200"
-            href="https://x.com/alananayadev"
+            href="https://x.com/alananayaa"
             target="_blank"
             rel="noreferrer noopener noopener"
           >
