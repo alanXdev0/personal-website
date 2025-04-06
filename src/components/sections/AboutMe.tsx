@@ -16,8 +16,8 @@ export default function AboutMe() {
         <p className="mb-4">
           Back in 2014, I began my journey into iOS development and was quickly
           hooked by the endless possibilities of coding and mobile app
-          development. Today, I'm proud to have worked on a variety of software
-          projects, starting with hobby projects, moving on to a{" "}
+          development. Today, I&apos;m proud to have worked on a variety of
+          software projects, starting with hobby projects, moving on to a{" "}
           <Link url="https://oomovil.com" title="tech startup" />, and later at
           a{" "}
           <Link
