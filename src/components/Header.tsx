@@ -9,7 +9,7 @@ export default function Header() {
           <Link href="/">Alan Anaya</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          iOS Mobile Developer at Globant
+          Senior Software Developer at Luxoft
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
           Expert in React, Swift, and Kotlin, crafting accessible web and mobile
